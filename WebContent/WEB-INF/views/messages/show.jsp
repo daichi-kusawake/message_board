@@ -11,7 +11,13 @@
         <p>作成日時：<fmt:formatDate value="${message.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
         <p>更新日時：<fmt:formatDate value="${message.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
 
+         <!--IndexServletへの遷移-->
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
+
+        <!--EditServletへの遷移-->
+        <p><a href="${pageContext.request.contextPath}/edit?id=${message.id}">このメッセージを編集する</a></p>
+
+<!-- ...（中略）... -->
 
     </c:param>
 </c:import>
